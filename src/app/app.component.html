@@ -1,12 +1,31 @@
-<div style=" width: auto; height: 100px; display: grid; grid-template-columns: 1fr 5fr; background-color:  rgb(209, 106, 65); color: white; font-size: 36px; font-family: 'Chewy', cursive;">
-  <div routerLink="/" >
-    <img src="assets/donnies-logo-crab-bgremove.png"/>
+<!--Careers Banner-->
+<div style="background-color: white; color: black; height: 30px;">
+  <div routerLink="careers"> Careers</div>
+</div>
+<!--Toolbar -->
+<div
+  style=" width: 100%; display: grid; grid-template-columns: 1fr 5fr; background-color:  rgb(209, 106, 65); color: white; font-size: 36px; font-family: 'Chewy', cursive;">
+  <div routerLink="/" style="cursor:pointer;">
+    <img src="assets/donnies-logo-crab-bgremove.png" />
   </div>
-  <div style="display: flex; flex-direction: row; gap: 20px; align-content: center; flex-wrap:wrap;">
-      <div routerLink="menu">Menu</div>
-      <div routerLink ="contact">Contact</div>
+  <div
+    style="display: flex; flex-direction: row; justify-content:space-between; align-content: center; flex-wrap:wrap;">
+    <div style="display: flex; flex-direction: row; gap: 20px; cursor:pointer;">
+      <div routerLink=" menu">Menu</div>
+      <div routerLink="contact">Contact</div>
       <div routerLink="about">About Us</div>
+    </div>
+    <div style="display: flex; flex-direction: row; gap: 20px; cursor:pointer; font-size: 22px; padding-right: 30px;">
+      <div>Find a Location </div>
+      <div>Login  </div>
+      <img style="width: 28px; height: 28px; filter: brightness(0) invert(1); " src="assets/shopping_bag.png"/>
+    </div>
+
   </div>
+  <div></div>
 
 </div>
+<!--Where component will render based on current path -->
 <router-outlet></router-outlet>
+<!--Footer Content -->
+<app-footer></app-footer>
