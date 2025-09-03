@@ -1,0 +1,30 @@
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel img {
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.foodItemButton {
+    width: 50%;
+    align-self: center;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Chewy', cursive;
+    background-color: rgb(33, 73, 110);
+    color: white;
+
+}
+
+.foodItemButton:hover {
+    cursor: pointer;
+    background-color: white;
+    color: rgb(33, 73, 110);
+    transform: scale(1.1);
+
+}

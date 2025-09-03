@@ -11,6 +11,7 @@ import { CareersComponent } from './careers/careers.component';
 import { FooterComponent } from './footer/footer.component';
 import { OrderNowComponent } from './order-now/order-now.component';
 import { EclubSignupComponent } from './eclub-signup/eclub-signup.component';
+import { FoodItemCarouselComponent } from './food-item-carousel/food-item-carousel.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { EclubSignupComponent } from './eclub-signup/eclub-signup.component';
     CareersComponent,
     FooterComponent,
     OrderNowComponent,
-    EclubSignupComponent
+    EclubSignupComponent,
+    FoodItemCarouselComponent
   ],
   imports: [
     BrowserModule,

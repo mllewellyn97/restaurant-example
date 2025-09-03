@@ -5,7 +5,7 @@
         Your browser does not support the video tag
     </video>
     <div
-        style="display: flex; flex-direction: column; justify-content: space-between; gap: 10px; position: absolute; top: 25%; left: 35%; text-align: center; font-weight: 700; color: white; font-family: 'Chewy', cursive;">
+        style="display: flex; flex-direction: column; justify-content: space-between; gap: 10px; position: absolute; top: 10%; left: 35%; text-align: center; font-weight: 700; color: white; font-family: 'Chewy', cursive;">
         <div style="font-size: 55px;     text-shadow: -1px -1px 0 rgb(33, 73, 110),
      1px -1px 0 rgb(33, 73, 110),
     -1px  1px 0 rgb(33, 73, 110),
@@ -19,7 +19,7 @@
             LIKE DONNIE
         </div>
 
-        <div style=" display: flex; justify-content: space-between; gap: 30px;">
+        <div class="videoOverlayButtonContainer">
             <button [routerLink]="['order']" class="videoOverlayButton">ORDER NOW</button>
             <button [routerLink]="['menu']" class="videoOverlayButton">VIEW MENU</button>
         </div>
@@ -27,4 +27,25 @@
 
     </div>
     <app-eclub-signup></app-eclub-signup>
+    <div style="display: flex; font-size: 45px; justify-content: center; font-weight: 700;">
+        NOBODY KNOWS GOOD SEAFOOD LIKE WE DO
+    </div>
+    <app-food-item-carousel></app-food-item-carousel>
+    <div class="ourStoryBackground">
+
+        <img style="width: 800px; height: 500px;" src="assets/snapper.jpg">
+        <div style="align-content: center;">
+            <div style="font-size: 45px; width: 400px; align-self: center;">
+                IT ALL STARTED ON THE WATER
+            </div>
+            <div>
+                You could say we know our way around the water.
+            </div>
+            <div style="padding-bottom: 20px;">
+                We're always serving up fresh local fish.
+            </div>
+            <button class="videoOverlayButton"> OUR STORY</button>
+        </div>
+
+    </div>
 </div>

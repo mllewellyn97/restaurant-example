@@ -9,10 +9,29 @@
 
 }
 
+
+.videoOverlayButtonContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+
+
 .videoOverlayButton:hover {
     cursor: pointer;
     background-color: white;
     color: rgb(33, 73, 110);
     transform: scale(1.1);
 
+}
+
+.ourStoryBackground {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-content: center;
+    background-image: url('/assets/ocean-gradient.jpg');
 }
