@@ -6,13 +6,15 @@ import { MenuComponent } from './menu/menu.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { CareersComponent } from './careers/careers.component';
+import { OrderNowComponent } from './order-now/order-now.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'menu', component: MenuComponent},
   { path: 'contact', component: ContactComponent},
   { path: 'about', component: AboutComponent},
-  { path: 'careers', component: CareersComponent}
+  { path: 'careers', component: CareersComponent},
+  { path: 'order', component: OrderNowComponent}
 ];
 
 @NgModule({

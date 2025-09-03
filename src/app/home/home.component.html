@@ -1,17 +1,30 @@
-
-<div style="position: relative;">
-    <video style="display: grid; justify-self: center; width: 100%; height: 100%; object-fit: cover;" autoplay playsinline muted loop>
-        <source src="assets/crab-seafood-video.mp4" type="video/mp4" />
+<div style="position: relative; display: flex; flex-direction: column; gap: 28px;">
+    <video style="display: grid; justify-self: center; width: 100%; height: 100%; object-fit: cover;" autoplay
+        playsinline muted loop>
+        <source src="assets/oyster-video.mp4" type="video/mp4" />
         Your browser does not support the video tag
     </video>
-    <div style="position: absolute; top: 45%; left: 40%; text-align: center; font-weight: 700; color: white; font-size: 36px; font-family: 'Chewy', cursive;">
-        <div style="background-color: black">
-            Join Us for CrabFest
+    <div
+        style="display: flex; flex-direction: column; justify-content: space-between; gap: 10px; position: absolute; top: 25%; left: 35%; text-align: center; font-weight: 700; color: white; font-family: 'Chewy', cursive;">
+        <div style="font-size: 55px;     text-shadow: -1px -1px 0 rgb(33, 73, 110),
+     1px -1px 0 rgb(33, 73, 110),
+    -1px  1px 0 rgb(33, 73, 110),
+     1px  1px 0 rgb(33, 73, 110);">
+            NOBODY DOES OYSTERS
         </div>
-        <button>Order Now</button>
-        <button>Menu</button>
+        <div style="font-size: 60px;     text-shadow: -1px -1px 0 rgb(33, 73, 110),
+     1px -1px 0 rgb(33, 73, 110),
+    -1px  1px 0 rgb(33, 73, 110),
+     1px  1px 0 rgb(33, 73, 110); ">
+            LIKE DONNIE
+        </div>
+
+        <div style=" display: flex; justify-content: space-between; gap: 30px;">
+            <button [routerLink]="['order']" class="videoOverlayButton">ORDER NOW</button>
+            <button [routerLink]="['menu']" class="videoOverlayButton">VIEW MENU</button>
+        </div>
+
+
     </div>
+    <app-eclub-signup></app-eclub-signup>
 </div>
-
-
-
