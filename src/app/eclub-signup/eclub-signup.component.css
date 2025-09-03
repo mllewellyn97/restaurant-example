@@ -1,0 +1,73 @@
+.eclubWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-self: center;
+    border-radius: 10px;
+    background-color: rgb(13, 49, 70);
+    color: white;
+    padding: 20px;
+    gap: 20px;
+
+}
+
+.eclubTopContainer {
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.eclubBottomContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.eclubHeaderText {
+    font-size: 45px;
+}
+
+.eclubInput {
+    height: 40px;
+}
+
+.eclubSignupButton {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Chewy', cursive;
+    background-color: rgb(33, 73, 110);
+    color: white;
+}
+
+@media (max-width: 1037px) {
+  .eclubTopContainer {
+    grid-template-columns: 1fr; /* stack header + inputs */
+  }
+
+  .eclubHeaderText {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .eclubInput {
+    width: 100%;
+  }
+
+  .eclubBottomContainer {
+    flex-direction: column; /* stack text + button */
+    align-items: center;
+    text-align: center;
+  }
+
+  .eclubBottomContainer button {
+    align-self: center; /* move button to bottom/center */
+    margin-top: 15px;
+    width: 100%;
+    max-width: 200px;
+  }
+}

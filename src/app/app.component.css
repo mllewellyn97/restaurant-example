@@ -37,7 +37,7 @@
     padding-right: 30px;
 }
 
-@media (max-width: 1066px) {
+@media (max-width: 766px) {
     .toolbarLeftOptions {
         display: none;
     }
