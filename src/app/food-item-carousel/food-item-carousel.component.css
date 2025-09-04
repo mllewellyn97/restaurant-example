@@ -2,12 +2,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 24px;
 }
 
 .carousel img {
     width: 400px;
     height: auto;
     border-radius: 8px;
+    
 }
 
 .foodItemButton {
@@ -15,7 +17,7 @@
     align-self: center;
     border-radius: 10px;
     font-size: 20px;
-    font-family: 'Chewy', cursive;
+    font-family: 'Playfair Display', cursive;
     background-color: rgb(33, 73, 110);
     color: white;
 
@@ -27,4 +29,8 @@
     color: rgb(33, 73, 110);
     transform: scale(1.1);
 
+}
+
+.arrowButton {
+    background-color: none;
 }

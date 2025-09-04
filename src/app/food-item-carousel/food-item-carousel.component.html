@@ -1,9 +1,16 @@
 <div class="carousel">
-    <button (click)="prev()">&#10094;</button>
+    <button class="arrowButton" (click)="prev()"><</button>
     <div style="display: flex; flex-direction: column; gap: 10px;">
         <img [src]="images[currentIndex]" alt="carousel image">
         <button class = "foodItemButton"> Order Now </button>
     </div>
-
-    <button (click)="next()">&#10095;</button>
+    <div style="display: flex; flex-direction: column; gap: 10px;">
+        <img [src]="images[nextIndex]" alt="carousel image">
+        <button class = "foodItemButton"> Order Now </button>
+    </div>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+        <img [src]="images[nextNextIndex]" alt="carousel image">
+        <button class = "foodItemButton"> Order Now </button>
+    </div>
+    <button class="arrowButton" (click)="next()">></button>
 </div>
